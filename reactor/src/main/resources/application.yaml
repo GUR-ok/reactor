@@ -1,0 +1,10 @@
+server:
+  servlet:
+    context-path: /
+  port: ${SERVER_PORTT:8000}
+
+spring:
+  r2dbc:
+    username: postgres
+    password: postgres
+    url: r2dbc:postgresql://localhost:5432/postgres?currentSchema=public
